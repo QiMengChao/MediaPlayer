@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item"
+    >
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/video_default_icon"/>
+    <TextView
+        android:id="@+id/tv_video_title"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:text="视频文件名字zzzzzzzzzzzzzzz"/>
+    <TextView
+        android:id="@+id/tv_video_duration"
+        android:layout_below="@id/tv_video_title"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:text="00:31"/>
+    <TextView
+        android:id="@+id/tv_video_size"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:text="4.37MB"/>
+
+</RelativeLayout>

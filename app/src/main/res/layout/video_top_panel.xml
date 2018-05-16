@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_video_volume_control">
+
+    <TextView
+        android:id="@+id/tv_video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频的标题"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/tv_video_system_time"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15:38:20"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_margin="5dp"/>
+    <ImageView
+        android:id="@+id/iv_video_battery"
+        android:layout_toLeftOf="@id/tv_video_system_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_battery_20"
+        android:layout_margin="8dp"/>
+    <ImageView
+        android:id="@+id/iv_video_volume"
+        android:layout_below="@id/tv_video_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/voice_selector"/>
+    <SeekBar
+        android:id="@+id/sb_volume"
+        android:layout_below="@id/tv_video_title"
+        android:layout_toRightOf="@id/iv_video_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:thumb="@drawable/video_progress_thumb"
+        android:thumbOffset="0dp"
+        android:minHeight="6dp"
+        android:maxHeight="6dp"
+        android:progress="60"
+        android:progressDrawable="@drawable/progress_video"/>
+
+</RelativeLayout>
